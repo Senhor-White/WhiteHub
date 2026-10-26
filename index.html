@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hub pessoal de projetos">
+  <title>Project Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <section id="landing" class="landing">
+      <div class="noise"></div>
+      <div class="grid-bg"></div>
+
+      <header class="landing-top">
+        <div class="brand">WHITE<span>/</span>LAB</div>
+        <div class="landing-status">
+          <i></i>
+          SYSTEM ONLINE
+        </div>
+      </header>
+
+      <div class="landing-content">
+        <div class="landing-copy">
+          <p class="micro-label">PERSONAL PROJECT ARCHIVE — 2026</p>
+          <h1>
+            Things I<br>
+            <em>build.</em>
+          </h1>
+          <p class="landing-description">
+            Projetos, experimentos e ideias transformadas em coisas reais.
+          </p>
+        </div>
+
+        <div class="video-frame">
+          <video
+            id="welcome-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            width="1280"
+            height="720"
+            aria-hidden="true"
+          >
+            <source src="assets/MiniWhite-Grok-Version-Animation-Hub-upscaled-2x.mp4" type="video/mp4">
+          </video>
+
+          <div id="video-placeholder" class="video-placeholder">
+            <span class="placeholder-symbol">+</span>
+            <strong>LOADING PREVIEW</strong>
+            <small>MP4 / 1280 × 720</small>
+          </div>
+        </div>
+
+        <button id="enter-button" class="enter-button" type="button">
+          <span class="enter-number">01</span>
+          <span class="enter-text">ENTER PROJECT HUB</span>
+          <span class="enter-arrow">↗</span>
+        </button>
+      </div>
+
+      <footer class="landing-bottom">
+        <span>SELECTED WORK / EXPERIMENTS / CODE</span>
+        <span>SCROLL IS DISABLED</span>
+      </footer>
+    </section>
+
+    <section id="hub" class="hub" aria-label="Hub de projetos">
+      <div class="hub-bg-number" id="bg-number">01</div>
+
+      <header class="hub-header">
+        <a href="#" id="brand-back" class="hub-brand">
+          WHITE<span>/</span>LAB
+        </a>
+
+        <div class="hub-title">
+          <span>SELECTED PROJECTS</span>
+          <h2>Archive<span>.</span></h2>
+        </div>
+
+        <button id="close-hub" class="close-hub" type="button">
+          <span>EXIT</span>
+          <b>×</b>
+        </button>
+      </header>
+
+      <div class="projects-area">
+        <div class="project-meta">
+          <span id="project-category">CATEGORY</span>
+          <span id="project-count">01 / 03</span>
+        </div>
+
+        <div id="projects-track" class="projects-track"></div>
+
+        <div class="project-description">
+          <p id="project-description" aria-live="polite" aria-atomic="true"></p>
+          <a id="project-link" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span id="project-link-label">PROJECT LINK SOON</span>
+            <span class="project-link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <footer class="hub-footer">
+        <div class="navigation">
+          <button id="prev-project" type="button" aria-label="Projeto anterior">←</button>
+          <div class="navigation-line">
+            <div id="navigation-progress"></div>
+          </div>
+          <button id="next-project" type="button" aria-label="Próximo projeto">→</button>
+        </div>
+
+        <div class="keyboard-hint">
+          <kbd>←</kbd>
+          <kbd>→</kbd>
+          <span>NAVIGATE</span>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
