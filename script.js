@@ -16,7 +16,7 @@ const PROJECTS = [
     description: "Apenas um simples checklist, nada há mais.",
     image: "assets/SmartCheck-preview.png",
     accent: "02",
-    link: "https://senhor-white.github.io/SmartCheck-Just-CheckList/"
+    link: "https://senhor-white.github.io/SmartCheck/"
   },
   {
     title: "Site-MDI",
